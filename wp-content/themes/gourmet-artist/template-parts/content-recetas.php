@@ -15,15 +15,15 @@
     } else {
         ?>
         <div class="imagen medium-6 columns">
-        <?php the_post_thumbnail('entrada'); ?>
+            <?php the_post_thumbnail('entrada'); ?>
         </div>
     <?php } ?>
 
-        <?php if (is_single()) { ?>
+    <?php if (is_single()) { ?>
         <div>
-            <?php } else { ?>
+        <?php } else { ?>
             <div class="medium-6 columns">
-<?php } ?>
+            <?php } ?>
 
             <header class="entry-header ">
                 <?php
@@ -36,15 +36,34 @@
                 if ('post' === get_post_type()) :
                     ?>
                     <div class="entry-meta">
-                    <?php gourmet_artist_posted_on(); ?>
+                        <?php gourmet_artist_posted_on(); ?>
                     </div><!-- .entry-meta -->
-    <?php endif;
-?>
+                <?php endif;
+                ?>
             </header><!-- .entry-header -->
 
             <div class="entry-content">
                 <?php
                 if (is_single()) {
+                    ?>
+
+                    <div class="taxonomias">
+                        <div class="hora-comida">
+                            <?php echo get_the_term_list($post->ID, 'horario-menu', "Hora de Comida: ", ', ', ''); ?>
+                        </div>
+                        <div class="tipo-comida">
+                            <?php echo get_the_term_list($post->ID, 'tipo-comida', "Tipo de Platillo: ", ', ', ''); ?>
+                        </div>
+                        <div class="rango-precio">
+                            <?php echo get_the_term_list($post->ID, 'precio_receta', "Precio: ", ', ', ''); ?>
+                        </div>
+                        <div class="estado-animo">
+                            <?php echo get_the_term_list($post->ID, 'estado', "Estado de Ánimo: ", ', ', ''); ?>
+                        </div>
+                    </div>
+
+
+                    <?php
                     the_content();
                 } else {
                     $excerpt = substr(get_the_excerpt(), 0, 200);
@@ -55,7 +74,7 @@
                     ));
                     ?>
                     <a href="<?php the_permalink(); ?>" class="button">Ver Receta</a>
-<?php } ?>
+                <?php } ?>
 
 
 
