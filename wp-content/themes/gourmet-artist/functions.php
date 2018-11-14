@@ -145,6 +145,17 @@ function gourmet_artist_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'gourmet_artist_scripts' );
 
+function mostrar_post_type($query){
+    //que no sea la pantalla de admin y que sea el query principal
+    if(!is_admin() && $query->is_main_query()){
+        //que sea el homepage
+        if(is_home()){
+            $query->set('post_type',array('post','recetas'));
+        }
+    }
+}
+add_action('pre_get_posts','mostrar_post_type');
+
 /**
  * Implement the Custom Header feature.
  */
