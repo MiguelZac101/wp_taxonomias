@@ -39,7 +39,7 @@
   width: auto;
 }
 
-.cptui-table td.outer {
+.cptui-table td.outter {
   vertical-align: top;
   width: 50%;
 }
@@ -63,17 +63,13 @@
   margin-top: 15px;
 }
 
-.cptui-table #slugchanged, .cptui-table #slugexists {
+.cptui-table #slugchanged {
   color: red;
   font-weight: bold;
 }
 
-.cptui-table #slugchanged.hidemessage, .cptui-table #slugexists.hidemessage {
+.cptui-table #slugchanged.hidemessage {
   display: none;
-}
-
-.cpt-ui_page_cptui_tools .cptui-table .outer p {
-  padding: 0 4px;
 }
 
 .cptui-support #support .question {
@@ -217,6 +213,11 @@
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.js #cptui_select_post_type input[type='submit'],
+.js #cptui_select_taxonomy input[type='submit'] {
+  display: none;
 }
 
 #togglelabels {
@@ -381,7 +382,7 @@ fieldset .cptui-help {
   min-width: 463px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .cptui-badge {
     padding-top: 142px;
     height: 50px;
@@ -411,12 +412,5 @@ fieldset .cptui-help {
   }
   .wdspromos-about p:nth-child(4) {
     padding-right: 5px;
-  }
-  .cptui-table td.outer {
-    width: 100%;
-  }
-  #cptui-audit-textarea,
-  #cptui_debug_info_email {
-    width: 100%;
   }
 }

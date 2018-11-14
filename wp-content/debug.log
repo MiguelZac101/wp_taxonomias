@@ -133,3 +133,4 @@
 [14-Nov-2018 12:58:50 UTC] PHP  23. Requests::parse_response() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:383
 [14-Nov-2018 12:58:50 UTC] PHP  24. Requests::request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:706
 [14-Nov-2018 12:58:50 UTC] PHP  25. Requests::get_transport() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:377
+[14-Nov-2018 14:06:16 UTC] Error Table 'wp_taxonomias2018.wp_options' doesn't exist de la base de datos de WordPress para la consulta SELECT option_value FROM wp_options WHERE option_name = 'cptui_taxonomies' LIMIT 1 realizada por require_once('C:\wamp\www\wp_taxonomias2018\wp-load.php'), require_once('C:\wamp\www\wp_taxonomias2018\wp-config.php'), require_once('C:\wamp\www\wp_taxonomias2018\wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, call_user_func_array, cptui_create_custom_taxonomies, get_option
