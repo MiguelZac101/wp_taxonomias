@@ -16,22 +16,26 @@ get_header();
 
 <?php get_template_part('template-parts/slider'); ?>
 
-<ul class="menu">   
-<?php
-$terminos = get_terms(
-    array(
-        'taxonomy' => 'tipo-comida'
-    )
-);
-foreach($terminos as $termino){
-    echo "<li><a href='#".$termino->slug."'>".$termino->name."</a></li>";
-}
-?>
-</ul>
-<div id="filtrar">
-    <?php 
-       filtrar_platillos('internacional');                
-    ?>
+<div id="filtrar" class="row">
+    <ul class="menu">   
+        <?php
+        $terminos = get_terms(
+                array(
+                    'taxonomy' => 'tipo-comida'
+                )
+        );
+        foreach ($terminos as $termino) {
+            echo "<li><a href='#" . $termino->slug . "'>" . $termino->name . "</a></li>";
+        }
+        ?>
+    </ul>
+    <div id="platillos">
+        <?php
+        foreach ($terminos as $termino) {
+            filtrar_platillos($termino->slug);
+        }
+        ?>
+    </div>
 </div>
 
 <div id="primary" class="content-area medium-8 columns">

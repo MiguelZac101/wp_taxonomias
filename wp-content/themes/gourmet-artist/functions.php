@@ -23,8 +23,9 @@ function filtrar_platillos($busqueda) {
     );
 
     $comida = new WP_Query($args);
+    echo '<div id="'.$busqueda.'" class="row">';
     while ($comida->have_posts()): $comida->the_post();
-        echo '<div class"small-6 medium-3 colums">';
+        echo '<div class="small-6 medium-3 columns">';
         echo '<div class="platillo">';
 
         echo '<a href="' . get_the_permalink($post->ID) . '">';
@@ -33,8 +34,8 @@ function filtrar_platillos($busqueda) {
         echo '<h2 class="text-center">' . get_the_title() . '</h2>';
         echo '</div>';
         echo '</div>';
-    endwhile;
-    wp_reset_postdata();
+    endwhile; wp_reset_postdata();
+    echo '</div>';
 }
 
 if (!function_exists('gourmet_artist_setup')) :
