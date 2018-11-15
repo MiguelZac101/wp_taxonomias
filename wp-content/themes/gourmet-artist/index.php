@@ -30,24 +30,7 @@ foreach($terminos as $termino){
 </ul>
 <div id="filtrar">
     <?php 
-        $args = array(
-            'posts_per_page' => 4,
-            'post_type' => 'recetas',
-            'orderby' => 'rand',
-            'tax_query' => array(
-                array(
-                    'taxonomy' => 'tipo-comida',
-                    'field' => 'slug',
-                    'terms' => 'internacional',
-                )
-            )
-        );
-        
-        $comida = new WP_Query($args);        
-        while($comida->have_posts()): $comida->the_post();
-            the_title('<h1>','</h1>');
-        endwhile;wp_reset_postdata();
-                
+       filtrar_platillos('internacional');                
     ?>
 </div>
 

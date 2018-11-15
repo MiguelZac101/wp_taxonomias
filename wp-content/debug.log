@@ -246,3 +246,115 @@
 [14-Nov-2018 15:04:04 UTC] PHP   4. WP_Hook->apply_filters() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:310
 [14-Nov-2018 15:04:04 UTC] PHP   5. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
 [14-Nov-2018 15:04:04 UTC] PHP   6. cptui_manage_taxonomies() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 29
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Undefined variable: post in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
+[15-Nov-2018 15:08:08 UTC] PHP Notice:  Trying to get property of non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\functions.php on line 30
+[15-Nov-2018 15:08:08 UTC] PHP Stack trace:
+[15-Nov-2018 15:08:08 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[15-Nov-2018 15:08:08 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[15-Nov-2018 15:08:08 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[15-Nov-2018 15:08:08 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[15-Nov-2018 15:08:08 UTC] PHP   5. filtrar_platillos() C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\index.php:33
