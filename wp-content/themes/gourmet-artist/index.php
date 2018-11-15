@@ -15,9 +15,8 @@ get_header();
 ?>
 
 <?php get_template_part('template-parts/slider'); ?>
-<ul class="menu">
-    
 
+<ul class="menu">   
 <?php
 $terminos = get_terms(
     array(
@@ -29,6 +28,28 @@ foreach($terminos as $termino){
 }
 ?>
 </ul>
+<div id="filtrar">
+    <?php 
+        $args = array(
+            'posts_per_page' => 4,
+            'post_type' => 'recetas',
+            'orderby' => 'rand',
+            'tax_query' => array(
+                array(
+                    'taxonomy' => 'tipo-comida',
+                    'field' => 'slug',
+                    'terms' => 'internacional',
+                )
+            )
+        );
+        
+        $comida = new WP_Query($args);        
+        while($comida->have_posts()): $comida->the_post();
+            the_title('<h1>','</h1>');
+        endwhile;wp_reset_postdata();
+                
+    ?>
+</div>
 
 <div id="primary" class="content-area medium-8 columns">
     <main id="main" class="site-main" role="main">
