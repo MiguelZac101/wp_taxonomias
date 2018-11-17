@@ -8,6 +8,8 @@
  * @package GourmetArtist
  */
 function recetas_comer() {
+    $tipo_comida = $_POST['tipocomida'];
+    
     $args = array(
         'post_type' => 'recetas',
         'posts_per_page' => 3,
@@ -16,7 +18,7 @@ function recetas_comer() {
             array(
                 'taxonomy' => 'horario-menu',
                 'field' => 'slug',
-                'terms' => 'comida',
+                'terms' => $tipo_comida,
             ),
         ),
     );
