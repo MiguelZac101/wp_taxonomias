@@ -7,6 +7,41 @@
  *
  * @package GourmetArtist
  */
+function recetas_comer() {
+    $args = array(
+        'post_type' => 'recetas',
+        'posts_per_page' => 3,
+        'orderbyby' => 'rand',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'horario-menu',
+                'field' => 'slug',
+                'terms' => 'comida',
+            ),
+        ),
+    );
+    $posts = get_posts($args);
+
+    $listado = array();
+    foreach ($posts as $post) {
+//        setup_postdata($post);
+
+        $listado[] = array(
+            'objeto' => $post,
+            'id' => $post->ID,
+            'nombre' => $post->post_title,
+            'imagen' => get_the_post_thumbnail($post->ID, 'filtrarHorario'),
+            'link' => get_permalink($post->ID),
+        );
+    }
+    header("Content-type: application/json");
+    echo json_encode($listado);
+    die;
+}
+
+add_action('wp_ajax_nopriv_recetas_comer', 'recetas_comer');
+add_action('wp_ajax_recetas_comer', 'recetas_comer');
+
 function filtrar_platillos($busqueda) {
     global $post;
     $args = array(
@@ -23,7 +58,7 @@ function filtrar_platillos($busqueda) {
     );
 
     $comida = new WP_Query($args);
-    echo '<div id="'.$busqueda.'" class="row">';
+    echo '<div id="' . $busqueda . '" class="row">';
     while ($comida->have_posts()): $comida->the_post();
         echo '<div class="small-6 medium-3 columns">';
         echo '<div class="platillo">';
@@ -34,7 +69,8 @@ function filtrar_platillos($busqueda) {
         echo '<h2 class="text-center">' . get_the_title() . '</h2>';
         echo '</div>';
         echo '</div>';
-    endwhile; wp_reset_postdata();
+    endwhile;
+    wp_reset_postdata();
     echo '</div>';
 }
 
@@ -173,6 +209,10 @@ function gourmet_artist_scripts() {
     wp_enqueue_script('what-input', get_template_directory_uri() . '/bower_components/what-input/what-input.js', array(), '6.1.1', true);
 
     wp_enqueue_script('appjs', get_template_directory_uri() . '/js/app.js', array(), '6.1.1', true);
+
+    wp_localize_script('appjs', 'admin_url', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
