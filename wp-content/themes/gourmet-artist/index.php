@@ -16,6 +16,14 @@ get_header();
 
 <?php get_template_part('template-parts/slider'); ?>
 
+<div class="platillos-por-hora">
+    <h2 id="hora" class="text-center">Prepara esto para: </h2>
+    <ul id="por-hora" class="row">
+
+    </ul>
+</div>
+
+
 <div id="filtrar" class="row">
     <ul class="menu">   
         <?php
