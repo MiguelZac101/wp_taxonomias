@@ -374,3 +374,10 @@
 [17-Nov-2018 16:52:22 UTC] PHP   4. WP_Hook->apply_filters() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:310
 [17-Nov-2018 16:52:22 UTC] PHP   5. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
 [17-Nov-2018 16:52:22 UTC] PHP   6. recetas_comer() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[20-Nov-2018 21:19:50 UTC] PHP Fatal error:  Call to undefined function base_name() in C:\wamp\www\wp_taxonomias2018\wp-content\plugins\ga-metaboxes\ga-metaboxes.php on line 21
+[20-Nov-2018 21:19:50 UTC] PHP Stack trace:
+[20-Nov-2018 21:19:50 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\wp-admin\post.php:0
+[20-Nov-2018 21:19:50 UTC] PHP   2. include() C:\wamp\www\wp_taxonomias2018\wp-admin\post.php:174
+[20-Nov-2018 21:19:50 UTC] PHP   3. do_meta_boxes() C:\wamp\www\wp_taxonomias2018\wp-admin\edit-form-advanced.php:714
+[20-Nov-2018 21:19:50 UTC] PHP   4. call_user_func() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\template.php:1073
+[20-Nov-2018 21:19:50 UTC] PHP   5. ga_diseno_metaboxes() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\template.php:1073
