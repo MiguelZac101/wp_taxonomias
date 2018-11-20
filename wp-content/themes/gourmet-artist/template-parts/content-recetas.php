@@ -62,6 +62,27 @@
                         </div>
                     </div>
 
+                    <div class="informacion-extra">
+                        <?php $calorias = get_post_meta(get_the_ID(), 'input-metabox', true); ?>
+                        <?php if ($calorias) { ?>
+                            <div class="calorias">
+                                <p>Calorias: <?php echo $calorias; ?></p>
+                            </div>
+                        <?php } ?>
+                        <?php $calificacion = get_post_meta(get_the_ID(), 'dropdown-metabox', true); ?>
+                        <?php if ($calificacion) { ?>
+                            <div class="calificacion">
+                                <p>Calificación: <?php echo $calificacion; ?></p>
+                            </div>
+                        <?php } ?>
+                    </div>
+
+                    <?php $subtitulo = get_post_meta(get_the_ID(), 'textarea-metabox', true); ?>
+                    <?php if ($subtitulo) { ?>
+                        <blockquote >
+                            <?php echo $subtitulo; ?>
+                        </blockquote>
+                    <?php } ?>
 
                     <?php
                     the_content();
