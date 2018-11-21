@@ -381,3 +381,14 @@
 [20-Nov-2018 21:19:50 UTC] PHP   3. do_meta_boxes() C:\wamp\www\wp_taxonomias2018\wp-admin\edit-form-advanced.php:714
 [20-Nov-2018 21:19:50 UTC] PHP   4. call_user_func() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\template.php:1073
 [20-Nov-2018 21:19:50 UTC] PHP   5. ga_diseno_metaboxes() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\template.php:1073
+[21-Nov-2018 22:30:39 UTC] PHP Warning:  mysqli_real_connect():  in C:\wamp\www\wp_taxonomias2018\wp-includes\wp-db.php on line 1531
+[21-Nov-2018 22:30:39 UTC] PHP Stack trace:
+[21-Nov-2018 22:30:39 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[21-Nov-2018 22:30:39 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[21-Nov-2018 22:30:39 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:13
+[21-Nov-2018 22:30:39 UTC] PHP   4. require_once() C:\wamp\www\wp_taxonomias2018\wp-load.php:37
+[21-Nov-2018 22:30:39 UTC] PHP   5. require_once() C:\wamp\www\wp_taxonomias2018\wp-config.php:90
+[21-Nov-2018 22:30:39 UTC] PHP   6. require_wp_db() C:\wamp\www\wp_taxonomias2018\wp-settings.php:106
+[21-Nov-2018 22:30:39 UTC] PHP   7. wpdb->__construct() C:\wamp\www\wp_taxonomias2018\wp-includes\load.php:404
+[21-Nov-2018 22:30:39 UTC] PHP   8. wpdb->db_connect() C:\wamp\www\wp_taxonomias2018\wp-includes\wp-db.php:592
+[21-Nov-2018 22:30:39 UTC] PHP   9. mysqli_real_connect() C:\wamp\www\wp_taxonomias2018\wp-includes\wp-db.php:1531
