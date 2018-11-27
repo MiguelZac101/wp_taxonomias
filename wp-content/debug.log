@@ -392,3 +392,63 @@
 [21-Nov-2018 22:30:39 UTC] PHP   7. wpdb->__construct() C:\wamp\www\wp_taxonomias2018\wp-includes\load.php:404
 [21-Nov-2018 22:30:39 UTC] PHP   8. wpdb->db_connect() C:\wamp\www\wp_taxonomias2018\wp-includes\wp-db.php:592
 [21-Nov-2018 22:30:39 UTC] PHP   9. mysqli_real_connect() C:\wamp\www\wp_taxonomias2018\wp-includes\wp-db.php:1531
+[27-Nov-2018 21:25:46 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php on line 213
+[27-Nov-2018 21:25:46 UTC] PHP Stack trace:
+[27-Nov-2018 21:25:46 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\wp-admin\admin-ajax.php:0
+[27-Nov-2018 21:25:46 UTC] PHP   2. do_action() C:\wamp\www\wp_taxonomias2018\wp-admin\admin-ajax.php:100
+[27-Nov-2018 21:25:46 UTC] PHP   3. WP_Hook->do_action() C:\wamp\www\wp_taxonomias2018\wp-includes\plugin.php:453
+[27-Nov-2018 21:25:46 UTC] PHP   4. WP_Hook->apply_filters() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:310
+[27-Nov-2018 21:25:46 UTC] PHP   5. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[27-Nov-2018 21:25:46 UTC] PHP   6. wp_ajax_dashboard_widgets() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[27-Nov-2018 21:25:46 UTC] PHP   7. wp_dashboard_primary() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\ajax-actions.php:364
+[27-Nov-2018 21:25:46 UTC] PHP   8. wp_dashboard_cached_rss_widget() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1367
+[27-Nov-2018 21:25:46 UTC] PHP   9. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1011
+[27-Nov-2018 21:25:46 UTC] PHP  10. wp_dashboard_primary_output() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1011
+[27-Nov-2018 21:25:46 UTC] PHP  11. wp_widget_rss_output() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1383
+[27-Nov-2018 21:25:46 UTC] PHP  12. fetch_feed() C:\wamp\www\wp_taxonomias2018\wp-includes\widgets.php:1389
+[27-Nov-2018 21:25:46 UTC] PHP  13. SimplePie->init() C:\wamp\www\wp_taxonomias2018\wp-includes\feed.php:703
+[27-Nov-2018 21:25:46 UTC] PHP  14. SimplePie->fetch_data() C:\wamp\www\wp_taxonomias2018\wp-includes\class-simplepie.php:1317
+[27-Nov-2018 21:25:46 UTC] PHP  15. SimplePie_Registry->create() C:\wamp\www\wp_taxonomias2018\wp-includes\class-simplepie.php:1531
+[27-Nov-2018 21:25:46 UTC] PHP  16. ReflectionClass->newInstanceArgs() C:\wamp\www\wp_taxonomias2018\wp-includes\SimplePie\Registry.php:184
+[27-Nov-2018 21:25:46 UTC] PHP  17. WP_SimplePie_File->__construct() C:\wamp\www\wp_taxonomias2018\wp-includes\SimplePie\Registry.php:184
+[27-Nov-2018 21:25:46 UTC] PHP  18. wp_safe_remote_request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-simplepie-file.php:56
+[27-Nov-2018 21:25:46 UTC] PHP  19. WP_Http->request() C:\wamp\www\wp_taxonomias2018\wp-includes\http.php:49
+[27-Nov-2018 21:25:46 UTC] PHP  20. Requests::request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-http.php:370
+[27-Nov-2018 21:25:46 UTC] PHP  21. Requests::parse_response() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:383
+[27-Nov-2018 21:25:46 UTC] PHP  22. Requests::request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:706
+[27-Nov-2018 21:25:46 UTC] PHP  23. Requests::get_transport() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:377
+[27-Nov-2018 21:25:46 UTC] PHP Notice:  Undefined index: a:1:{s:3:"ssl";b:1;} in C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php on line 213
+[27-Nov-2018 21:25:46 UTC] PHP Stack trace:
+[27-Nov-2018 21:25:46 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\wp-admin\admin-ajax.php:0
+[27-Nov-2018 21:25:46 UTC] PHP   2. do_action() C:\wamp\www\wp_taxonomias2018\wp-admin\admin-ajax.php:100
+[27-Nov-2018 21:25:46 UTC] PHP   3. WP_Hook->do_action() C:\wamp\www\wp_taxonomias2018\wp-includes\plugin.php:453
+[27-Nov-2018 21:25:46 UTC] PHP   4. WP_Hook->apply_filters() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:310
+[27-Nov-2018 21:25:46 UTC] PHP   5. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[27-Nov-2018 21:25:46 UTC] PHP   6. wp_ajax_dashboard_widgets() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-hook.php:286
+[27-Nov-2018 21:25:46 UTC] PHP   7. wp_dashboard_primary() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\ajax-actions.php:364
+[27-Nov-2018 21:25:46 UTC] PHP   8. wp_dashboard_cached_rss_widget() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1367
+[27-Nov-2018 21:25:46 UTC] PHP   9. call_user_func_array() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1011
+[27-Nov-2018 21:25:46 UTC] PHP  10. wp_dashboard_primary_output() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1011
+[27-Nov-2018 21:25:46 UTC] PHP  11. wp_widget_rss_output() C:\wamp\www\wp_taxonomias2018\wp-admin\includes\dashboard.php:1383
+[27-Nov-2018 21:25:46 UTC] PHP  12. fetch_feed() C:\wamp\www\wp_taxonomias2018\wp-includes\widgets.php:1389
+[27-Nov-2018 21:25:46 UTC] PHP  13. SimplePie->init() C:\wamp\www\wp_taxonomias2018\wp-includes\feed.php:703
+[27-Nov-2018 21:25:46 UTC] PHP  14. SimplePie->fetch_data() C:\wamp\www\wp_taxonomias2018\wp-includes\class-simplepie.php:1317
+[27-Nov-2018 21:25:46 UTC] PHP  15. SimplePie_Registry->create() C:\wamp\www\wp_taxonomias2018\wp-includes\class-simplepie.php:1531
+[27-Nov-2018 21:25:46 UTC] PHP  16. ReflectionClass->newInstanceArgs() C:\wamp\www\wp_taxonomias2018\wp-includes\SimplePie\Registry.php:184
+[27-Nov-2018 21:25:46 UTC] PHP  17. WP_SimplePie_File->__construct() C:\wamp\www\wp_taxonomias2018\wp-includes\SimplePie\Registry.php:184
+[27-Nov-2018 21:25:46 UTC] PHP  18. wp_safe_remote_request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-wp-simplepie-file.php:56
+[27-Nov-2018 21:25:46 UTC] PHP  19. WP_Http->request() C:\wamp\www\wp_taxonomias2018\wp-includes\http.php:49
+[27-Nov-2018 21:25:46 UTC] PHP  20. Requests::request() C:\wamp\www\wp_taxonomias2018\wp-includes\class-http.php:370
+[27-Nov-2018 21:25:46 UTC] PHP  21. Requests::get_transport() C:\wamp\www\wp_taxonomias2018\wp-includes\class-requests.php:377
+[27-Nov-2018 21:57:53 UTC] PHP Notice:  Undefined variable: query in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\page-recetas.php on line 44
+[27-Nov-2018 21:57:53 UTC] PHP Stack trace:
+[27-Nov-2018 21:57:53 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[27-Nov-2018 21:57:53 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[27-Nov-2018 21:57:53 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[27-Nov-2018 21:57:53 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74
+[27-Nov-2018 21:57:53 UTC] PHP Fatal error:  Call to a member function have_posts() on a non-object in C:\wamp\www\wp_taxonomias2018\wp-content\themes\gourmet-artist\page-recetas.php on line 44
+[27-Nov-2018 21:57:53 UTC] PHP Stack trace:
+[27-Nov-2018 21:57:53 UTC] PHP   1. {main}() C:\wamp\www\wp_taxonomias2018\index.php:0
+[27-Nov-2018 21:57:53 UTC] PHP   2. require() C:\wamp\www\wp_taxonomias2018\index.php:17
+[27-Nov-2018 21:57:53 UTC] PHP   3. require_once() C:\wamp\www\wp_taxonomias2018\wp-blog-header.php:19
+[27-Nov-2018 21:57:53 UTC] PHP   4. include() C:\wamp\www\wp_taxonomias2018\wp-includes\template-loader.php:74

@@ -1,5 +1,10 @@
 jQuery(document).foundation();
 jQuery(function ($) {
+    
+    if($('.filtro-contenido').length){
+        $('.filtro-contenido').filterizr();
+    }
+    
     $('#platillos > div').not(':first').hide();
     $('#filtrar .menu li:first-child').addClass('active');
 
