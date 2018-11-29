@@ -7,9 +7,71 @@
  *
  * @package GourmetArtist
  */
+function buscarResultados() {
+    $buscar = $_POST['buscar'];
+    $precio = $_POST['precio'];
+    $tipo = $_POST['tipo'];
+    $calorias = $_POST['calorias'];
+    $calorias = explode('-',$calorias);
+    $min = $calorias[0];
+    $max = $calorias[1];
+
+    $args = array(
+        'post_type' => 'recetas',
+        'posts_per_page' => -1,
+        's' => $buscar, // buscar por titulo del post
+        //buscar por termino de taxonomia
+        'tax_query' => array(
+            'relation' => 'AND',
+            array(
+                'taxonomy' => 'precio_receta',
+                'field' => 'slug',
+                'terms' => $precio,
+            ),
+            array(
+                'taxonomy' => 'tipo-comida',
+                'field' => 'slug',
+                'terms' => $tipo,
+            ),
+        ),
+            //buscar por metabox
+        'meta_query' => array(
+            array(
+                'key' => 'input-metabox',
+                'value' => array($min,$max),
+                'type' => 'numeric',
+                'compare' => 'BETWEEN' // LIKE <= >= puedes utilizar otros operadores
+            )
+        )
+    );
+
+    $posts = get_posts($args);
+    $listado = array();
+    foreach ($posts as $post) {
+        setup_postdata($post);
+        $listado[] = array(
+            'objeto' => $post,
+            'id' => $post->ID,
+            'nombre' => $post->post_title,
+            'contenido' => substr($post->post_content, 0, 80) . "...",
+            'imagen' => get_the_post_thumbnail($post->ID, 'filtrarHorario'),
+            'link' => get_permalink($post->ID)
+        );
+    }
+
+//    header("Content-type: application/json");
+//    echo json_encode($listado);
+//    die();
+
+    wp_send_json($listado);
+}
+
+add_action('wp_ajax_nopriv_buscarResultados', 'buscarResultados');
+add_action('wp_ajax_buscarResultados', 'buscarResultados');
+
 function recetas_comer() {
     $tipo_comida = $_POST['tipocomida'];
-    
+
     $args = array(
         'post_type' => 'recetas',
         'posts_per_page' => 3,
@@ -209,10 +271,10 @@ function gourmet_artist_scripts() {
     wp_enqueue_script('foundation-js', get_template_directory_uri() . '/bower_components/foundation-sites/dist/foundation.js', array(), '6.1.1', true);
 
     wp_enqueue_script('what-input', get_template_directory_uri() . '/bower_components/what-input/what-input.js', array(), '6.1.1', true);
-    
+
     wp_enqueue_script('filterizr', get_template_directory_uri() . '/js/jquery.filterizr.min.js', array(), '2018', true);
-    
-    wp_enqueue_script('appjs', get_template_directory_uri() . '/js/app.js', array(), '6.1.1', true);      
+
+    wp_enqueue_script('appjs', get_template_directory_uri() . '/js/app.js', array(), '6.1.1', true);
 
     wp_localize_script('appjs', 'admin_url', array(
         'ajax_url' => admin_url('admin-ajax.php')

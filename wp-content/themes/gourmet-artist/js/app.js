@@ -1,10 +1,54 @@
 jQuery(document).foundation();
 jQuery(function ($) {
-    
-    if($('.filtro-contenido').length){
+
+    //Buscador desde input
+    $('#btn_buscar').on('click', function () {
+        
+        $('#resultado').html('');
+        
+        var termino = $('#buscar').val();
+        var precio = $('#precio').val();
+        var tipo = $('#tipo').val();
+        var calorias = $('#calorias').val();
+        
+//        alert(termino);
+        var postData = {
+            action: 'buscarResultados',
+            buscar: termino,
+            precio: precio,
+            tipo: tipo,
+            calorias: calorias
+        }
+        jQuery.ajax({
+            url: admin_url.ajax_url,
+            type: 'post',
+            data: postData
+        }).done(function(responce){
+            $.each(responce, function(index,object){
+                var resultado = '<div class="row">';
+                resultado += '<div class="medium-4 small-12 columns">';
+                resultado += object.imagen;
+                resultado += '</div>';//medium-4
+                resultado += '<div class="medium-8 columns contenido">';                
+                resultado += '<h3 class="text-center">';
+                resultado += '<a href="'+object.link+'">';
+                resultado += object.nombre;
+                resultado += '</a>';
+                resultado += '</h3>';                
+                resultado += '<p>'+object.contenido+'</p>';                                
+                resultado += '<a class="button" href="'+object.link+'">Leer más</a>';                
+                resultado += '</div>';//medium-8
+                resultado += '</div>';
+                
+                $('#resultado').append(resultado);
+            });
+        });
+    });
+
+    if ($('.filtro-contenido').length) {
         $('.filtro-contenido').filterizr();
     }
-    
+
     $('#platillos > div').not(':first').hide();
     $('#filtrar .menu li:first-child').addClass('active');
 

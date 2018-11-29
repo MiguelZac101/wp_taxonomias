@@ -77,8 +77,8 @@ $table_prefix  = 'wp_';
  * en sus entornos de desarrollo.
  */
 
-define('WP_DEBUG', true);
-define( 'WP_DEBUG_LOG', true );
+define('WP_DEBUG', false);
+define( 'WP_DEBUG_LOG', false );
 
 /* ¡Eso es todo, deja de editar! Feliz blogging */
 
