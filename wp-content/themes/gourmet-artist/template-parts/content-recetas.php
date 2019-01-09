@@ -97,7 +97,14 @@
                     <a href="<?php the_permalink(); ?>" class="button">Ver Receta</a>
                 <?php } ?>
 
+                <!--IMPRIMIENDO EL POST ANTERIOR-->
+                <a class="receta_anterior" href="<?php echo get_permalink(get_previous_post()->ID); ?>" data-receta-anterior="<?php echo get_previous_post()->ID; ?>">
+                    Receta Anterior
+                </a>
 
+<!--                <pre>
+                    <?php var_dump(get_previous_post()); ?>
+                </pre>-->
 
             </div><!-- .entry-content -->
 
